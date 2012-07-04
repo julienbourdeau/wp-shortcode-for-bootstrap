@@ -66,3 +66,11 @@ if(!isset($sfb_button_2)){
 	$sfb_button_2 = new ShortcodesForBootstrap('bootstrapbuttons');
 	add_action('admin_head', array($sfb_button_2, 'addSelector'));
 }
+
+/**
+	Select box for bootstrap Miscellaneous
+ */
+if(!isset($sfb_button_3)){
+	$sfb_button_3 = new ShortcodesForBootstrap('bootstrapmisc');
+	add_action('admin_head', array($sfb_button_3, 'addSelector'));
+}

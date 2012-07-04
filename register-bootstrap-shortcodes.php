@@ -33,10 +33,11 @@ function sfb_alert( $atts, $content = null ) {
 
     return $out;
 }
+add_shortcode('alert', 'sfb_alert');
 
 /**
  * Create a shortcode for bootstrap buttons
- * ex: [button text="download" size="large" type="success" icon="envelope" white="1"]
+ * ex: [button link="#" text="download" size="large" type="success" icon="envelope" white="1"]
  *
  * @since 0.1
  */
