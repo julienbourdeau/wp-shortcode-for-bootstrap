@@ -112,7 +112,7 @@ add_shortcode('label', 'sfb_label');
 function sfb_badge( $atts, $content = null ) {
     extract(shortcode_atts(array(
 		'type'		=> '',
-		'text'		=> '0';
+		'text'		=> '0',
     ), $atts));
 
 	if ( $type != '' ) $type = "badge-$type";

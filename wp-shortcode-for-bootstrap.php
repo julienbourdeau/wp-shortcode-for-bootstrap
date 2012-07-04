@@ -40,7 +40,7 @@ class ShortcodesForBootstrap {
 	}
  
 	function registerTmcePlugin($plugin_array){
-		$plugin_array[$this->buttonName] = plugins_url() . '/shortcodes-editor-selector/editor_plugin'. $this->buttonName .'.js.php';
+		$plugin_array[$this->buttonName] = plugins_url() . '/shortcodes-editor-selector/editor_plugin_'. $this->buttonName .'.js.php';
 		//if ( get_user_option('rich_editing') == 'true') 
 		// 	var_dump($plugin_array);
 		return $plugin_array;
@@ -48,3 +48,8 @@ class ShortcodesForBootstrap {
 }
  
 endif;
+
+if(!isset($sfb_button_1)){
+	$sfb_button_1 = new ShortcodesForBootstrap('content_wrappers');
+	add_action('admin_head', array($sfb_button_1, 'addSelector'));
+}
