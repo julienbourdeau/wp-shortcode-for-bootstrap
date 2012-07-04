@@ -11,6 +11,12 @@ function sfb_well_box( $atts, $content = null ) {
 }
 add_shortcode('well_box', 'sfb_well_box');
 
+/**
+ * Create a shortcode for bootstrap alerts
+ * ex: [alert type="info" closable="1"]Lorem ipsum <strong>text</strong>[/alert]
+ *
+ * @since 0.1
+ */
 function sfb_alert( $atts, $content = null ) {
     extract(shortcode_atts(array(
         'type'      => 'alert-block',
@@ -30,7 +36,7 @@ function sfb_alert( $atts, $content = null ) {
 
 /**
  * Create a shortcode for bootstrap buttons
- * ex: [button size="large" type="success" icon="envelope" white=1]Click Here[/button]
+ * ex: [button text="download" size="large" type="success" icon="envelope" white="1"]
  *
  * @since 0.1
  */
@@ -61,7 +67,7 @@ add_shortcode('button', 'sfb_button');
 
 /**
  * Create a shortcode for bootstrap icons
- * ex: [icon icon="envelope" white=1]
+ * ex: [icon icon="envelope" white="1"]
  *
  * @since 0.1
  */
@@ -80,7 +86,7 @@ add_shortcode('icon', 'sfb_icon');
 
 /**
  * Create a shortcode for bootstrap labels
- * ex: [label type="warning"]Attention[/label]
+ * ex: [label type="important" text="Attention"]
  *
  * @since 0.1
  */
@@ -99,7 +105,7 @@ add_shortcode('label', 'sfb_label');
 
 /**
  * Create a shortcode for bootstrap badges
- * ex: [badge type="success"]12[/badge]
+ * ex: [badge type="success" text="12"]
  *
  * @since 0.1
  */
