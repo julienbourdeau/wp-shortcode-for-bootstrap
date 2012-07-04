@@ -10,6 +10,8 @@ Author URI: http://sigerr.org
 
 require_once 'register-bootstrap-shortcodes.php';
 
+
+
 if(!class_exists('ShortcodesForBootstrap')):
  
 class ShortcodesForBootstrap {
@@ -40,7 +42,7 @@ class ShortcodesForBootstrap {
 	}
  
 	function registerTmcePlugin($plugin_array){
-		$plugin_array[$this->buttonName] = plugins_url() . '/shortcodes-editor-selector/editor_plugin_'. $this->buttonName .'.js.php';
+		$plugin_array[$this->buttonName] = plugins_url() . '/wp-shortcode-for-bootstrap/editor_plugin_'. $this->buttonName .'.js.php';
 		//if ( get_user_option('rich_editing') == 'true') 
 		// 	var_dump($plugin_array);
 		return $plugin_array;
@@ -49,7 +51,18 @@ class ShortcodesForBootstrap {
  
 endif;
 
+/**
+	Select box for bootstrap icons
+ */
 if(!isset($sfb_button_1)){
-	$sfb_button_1 = new ShortcodesForBootstrap('content_wrappers');
+	$sfb_button_1 = new ShortcodesForBootstrap('bootstrapicons');
 	add_action('admin_head', array($sfb_button_1, 'addSelector'));
+}
+
+/**
+	Select box for bootstrap buttons
+ */
+if(!isset($sfb_button_2)){
+	$sfb_button_2 = new ShortcodesForBootstrap('bootstrapbuttons');
+	add_action('admin_head', array($sfb_button_2, 'addSelector'));
 }
