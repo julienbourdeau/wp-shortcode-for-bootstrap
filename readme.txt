@@ -1,6 +1,3 @@
-wp-shortcode-for-bootstrap
-==========================
-
 === Plugin Name ===
 Contributors: julienbourdeau
 Donate link: 
