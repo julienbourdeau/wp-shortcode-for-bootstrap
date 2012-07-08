@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== WP Shortcode For Bootstrap ===
 Contributors: julienbourdeau
 Donate link: 
 Tags: shortcodes, bootstrap, tinymce plugin, visual editor

@@ -3,8 +3,8 @@ wp-shortcode-for-bootstrap
 
 If your theme is using Bootstrap (original or modified one), this plugin will add shortcodes and selector in the visual editor.
 
-Plugin Name
------------
+WP Shortcode For Bootstrap
+--------------------------
 
 * Contributors: julienbourdeau
 * Donate link: 
