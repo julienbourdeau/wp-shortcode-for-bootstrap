@@ -32,7 +32,7 @@ class ShortcodesForBootstrap {
 	      add_filter('mce_external_plugins', array($this, 'registerTmcePlugin'));
 	      //you can use the filters mce_buttons_2, mce_buttons_3 and mce_buttons_4 
 	      //to add your button to other toolbars of your tinymce
-	      add_filter('mce_buttons', array($this, 'registerButton'));
+	      add_filter('mce_buttons_3', array($this, 'registerButton'));
 	    }
 	}
  
