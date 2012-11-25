@@ -156,7 +156,7 @@ add_shortcode('progress', 'sfb_progress');
 /**
  * Register style and JS that is required
  *
- * @since 0.1
+ * @since 1.1
  */
 
 function sfb_add_boostrap() {

@@ -1,7 +1,7 @@
 wp-shortcode-for-bootstrap
 ==========================
 
-If your theme is using Bootstrap (original or modified one), this plugin will add shortcodes and selector in the visual editor.
+This plugin will add some bootstrap features into shortcodes and add dropdown menus in the visual editor.
 
 WP Shortcode For Bootstrap
 --------------------------
@@ -19,11 +19,30 @@ WP Shortcode For Bootstrap
 Description
 -----------
 
-This plugin doesn't add Bootstrap to your theme (no css, no js, no img). You are meant to do it yourself in case you want
-to modify it (change the colors for example). You can check the FAQ if you need some help to add it.
+This plugin doesn't add the full Bootstrap to your theme. This plugin simply add support for:
+* Buttons
+* Icons (sprite)
+* Label
+* Progress bars
+* Badges
+* Well
 
-If you want to add an icon to your text, you can simply click on the button and select the one you want from the list. It's
-really easy.
+You can check the FAQ below.
+
+Examples
+--------
+
+There is dropdown menus added in your tiny mce to help you using these shortcodes.
+
+Shortcode for a  button
+	[button link="file.zip" text="Download the file" size="large" type="success" icon="download" white="1"]
+
+Shortcode for an icon
+	[icon icon="search" white=""]
+
+Shortcode for a progress bar
+	[progress val="40" type="success" striped="1" active="1"]
+
 
 Installation
 ------------
@@ -42,24 +61,36 @@ Frequently Asked Questions
 
 Twitter Inc has publish a wonderful library to build website, [check it out here]: http://twitter.github.com/bootstrap/
 
-### How can I install it ?
+### Is bootstrap coming with the plugin?
 
-If you don't know how to do it:
-1. you need to download the .zip archive, and copy the files into your theme directory.
-1. Then copy and paste this code on top of your functions.php
+The full bootstrap is not included, only the necessary code:
+* Buttons
+* Icons (sprite)
+* Label
+* Progress bars
+* Badges
+* Well
 
+
+I am already using bootstrap I dont want to include this code twice
+
+Open register-bootstrap-shortcodes.php and simply remove these line at the end of the file.
+For now there is no option to not include it.
 
 	function sfb_add_boostrap() {
-		wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css');
-		wp_enqueue_style( 'bootstrap-responsive', get_template_directory_uri() . '/css/bootstrap-responsive.css', array( 'bootstrap' ) );
+	    wp_enqueue_style( 'css-bootstrap-for-shortcodes', plugins_url('custom-bootstrap.css', __FILE__ ));
 
-		wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '2.0.4', true );
+	    wp_enqueue_script( 'js-bootstrap-for-shortcodes', plugins_url('custom-bootstrap.js', __FILE__ ), array( 'jquery' ), '2.2.1', true );
 	}
 	add_action( 'wp_enqueue_scripts', 'sfb_add_boostrap' );
 
 
 Changelog
 ---------
+
+### 1.1 
+* Fixed the problem with folder name
+* Added bootstrap in the plugin, only the necessary code
 
 ### 1.0
 * First release
