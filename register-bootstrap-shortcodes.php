@@ -6,6 +6,7 @@
  * @since 0.1
  */
 
+
 function sfb_well_box( $atts, $content = null ) {
    return '<div class="well">' . do_shortcode($content) . '</div>';
 }
@@ -147,3 +148,19 @@ function sfb_progress( $atts, $content = null ) {
     return $out;
 }
 add_shortcode('progress', 'sfb_progress');
+
+
+
+/**
+ * Register style and JS that is required
+ *
+ * @since 0.1
+ */
+
+function sfb_add_boostrap() {
+    wp_enqueue_style( 'css-bootstrap-for-shortcodes', plugins_url('custom-bootstrap.css', __FILE__ ));
+
+    //wp_enqueue_script( 'js-bootstrap-for-shortcodes', plugins_url('custom-bootstrap.js', __FILE__ ), array( 'jquery' ), '2.2.1', true );
+}
+add_action( 'wp_enqueue_scripts', 'sfb_add_boostrap' );
+
