@@ -47,6 +47,7 @@ function sfb_button( $atts, $content = null ) {
         'link'      => '#',
         'text'      => 'Click Here',
 		'size'		=> '',
+		'block'		=> '',
 		'icon'		=> '',
 		'white'		=> '',
 		'type'		=> '',
@@ -54,8 +55,9 @@ function sfb_button( $atts, $content = null ) {
 
     if ( $type != '' ) $type = "btn-$type";
     if ( $size != '' ) $size = "btn-$size";
+    if ( $block != '' ) $block = "btn-block";
 
-	$out = "<a class=\"btn $type $size\" href=\"" .$link. "\">";
+	$out = "<a class=\"btn $type $size $block\" href=\"" .$link. "\">";
 
 	if ( $icon != '' ) {
 		if ( $white != '' ) $white = "icon-white";
