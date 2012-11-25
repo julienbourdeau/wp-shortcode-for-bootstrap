@@ -27,7 +27,7 @@ This plugin doesn't add the full Bootstrap to your theme. This plugin simply add
 * Badges
 * Well
 
-You can check the FAQ below.
+Check out the FAQ below.
 
 Screenshots
 -----------
@@ -38,23 +38,22 @@ Screenshots
 Examples
 --------
 
-There is dropdown menus added in your tiny mce to help you using these shortcodes.
+There is 3 dropdown menus (select) added in your tinyMCE to help you using these shortcodes.
 
 Shortcode for a  button
-	[button link="file.zip" text="Download the file" size="large" type="success" icon="download" white="1"]
+	`[button link="file.zip" text="Download the file" size="large" type="success" icon="download" white="1"]`
 
 Shortcode for an icon
-	[icon icon="search" white=""]
+	`[icon icon="search" white=""]`
 
 Shortcode for a progress bar
-	[progress val="40" type="success" striped="1" active="1"]
+	`[progress val="40" type="success" striped="1" active="1"]`
 
 
 Installation
 ------------
 This section describes how to install the plugin and get it working.
 
-e.g.
 
 1. Upload the wp-shortcode-for-bootstrap folder to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
@@ -80,8 +79,8 @@ The full bootstrap is not included, only the necessary code:
 
 I am already using bootstrap I dont want to include this code twice
 
-Open register-bootstrap-shortcodes.php and simply remove these line at the end of the file.
-For now there is no option to not include it.
+Open register-bootstrap-shortcodes.php and simply remove these lines at the end of the file.
+For now, there is no option to not include it.
 
 	function sfb_add_boostrap() {
 	    wp_enqueue_style( 'css-bootstrap-for-shortcodes', plugins_url('custom-bootstrap.css', __FILE__ ));
