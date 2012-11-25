@@ -10,8 +10,8 @@ WP Shortcode For Bootstrap
 * Donate link: 
 * Tags: shortcodes, bootstrap, tinymce plugin, visual editor
 * Requires at least: 3.0
-* Tested up to: 3.4.1
-* Stable tag: 1.0
+* Tested up to: 3.4.2
+* Stable tag: 1.1
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,13 +40,13 @@ Examples
 
 There is 3 dropdown menus (select) added in your tinyMCE to help you using these shortcodes.
 
-Shortcode for a  button
+### Shortcode for a  button
 	`[button link="file.zip" text="Download the file" size="large" type="success" icon="download" white="1"]`
 
-Shortcode for an icon
+### Shortcode for an icon
 	`[icon icon="search" white=""]`
 
-Shortcode for a progress bar
+### Shortcode for a progress bar
 	`[progress val="40" type="success" striped="1" active="1"]`
 
 
