@@ -42,7 +42,7 @@ class ShortcodesForBootstrap {
 	}
  
 	function registerTmcePlugin($plugin_array){
-		$plugin_array[$this->buttonName] = plugins_url() . '/wp-shortcode-for-bootstrap/editor_plugin_'. $this->buttonName .'.js.php';
+		$plugin_array[$this->buttonName] = plugins_url('editor_plugin_'. $this->buttonName .'.js.php', __FILE__ );
 		//if ( get_user_option('rich_editing') == 'true') 
 		// 	var_dump($plugin_array);
 		return $plugin_array;
