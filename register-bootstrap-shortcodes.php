@@ -162,7 +162,7 @@ add_shortcode('progress', 'sfb_progress');
 function sfb_add_boostrap() {
     wp_enqueue_style( 'css-bootstrap-for-shortcodes', plugins_url('custom-bootstrap.css', __FILE__ ));
 
-    //wp_enqueue_script( 'js-bootstrap-for-shortcodes', plugins_url('custom-bootstrap.js', __FILE__ ), array( 'jquery' ), '2.2.1', true );
+    wp_enqueue_script( 'js-bootstrap-for-shortcodes', plugins_url('custom-bootstrap.js', __FILE__ ), array( 'jquery' ), '2.2.1', true );
 }
 add_action( 'wp_enqueue_scripts', 'sfb_add_boostrap' );
 
