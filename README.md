@@ -29,6 +29,12 @@ This plugin doesn't add the full Bootstrap to your theme. This plugin simply add
 
 You can check the FAQ below.
 
+Screenshots
+-----------
+
+![This is the code](http://demo.sigerr.org/wp-shortcode-for-bootstrap/back-end.png "The shortcodes")
+![This is the result](http://demo.sigerr.org/wp-shortcode-for-bootstrap/front-end.png "The result")
+
 Examples
 --------
 
