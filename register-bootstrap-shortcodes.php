@@ -80,7 +80,7 @@ function sfb_icon( $atts, $content = null ) {
     ), $atts));
 
 	if ( $white != '' ) $white = "icon-white";
-	$out = "<i class=\"icon icon-$icon $white \"></i> ";
+	$out = "<i class=\"icon-$icon $white \"></i> ";
     
     return $out;
 }
