@@ -41,13 +41,13 @@ Examples
 There is 3 dropdown menus (select) added in your tinyMCE to help you using these shortcodes.
 
 ### Shortcode for a  button
-	`[button link="file.zip" text="Download the file" size="large" type="success" icon="download" white="1"]`
+	[button link="file.zip" text="Download the file" size="large" type="success" icon="download" white="1"]
 
 ### Shortcode for an icon
-	`[icon icon="search" white=""]`
+	[icon icon="search" white=""]
 
 ### Shortcode for a progress bar
-	`[progress val="40" type="success" striped="1" active="1"]`
+	[progress val="40" type="success" striped="1" active="1"]
 
 
 Installation
